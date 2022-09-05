@@ -36,6 +36,11 @@
     --bg-column-max: #1E90FF;
     --bg-grey: #D3D3D3;
     --bg-green: #228B22;
+    --bg-footer-top: #23272A;
+    --bg-footer-social: #F08080;
+    --bg-footer-menu: #20B2AA;
+    --bg-footer-bottom: #7FFFD4;
+    --bg-footer-log: #FFB6C1;
 }
 
 /* #endregion utilities*/
@@ -145,4 +150,39 @@
 .chiusura_main{
     height: 900px;
     background-color: var(--bg-green);
+    border: 1px dashed black;
+}
+
 /* #endregion main */
+
+/* #region footer */
+
+.footer{
+    background-color: var(--bg-footer-top);
+}
+.row.menu_bottom{
+    height: 630px;
+    background-color: var(--bg-footer-top);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.row.logo_bottom{
+    height: 100px;
+    background-color: var(--bg-footer-top);
+}
+
+.col-3.social{
+    background-color: var(--bg-footer-social);
+}
+
+.col-9.menu{
+    background-color: var(--bg-footer-menu);
+    border: 1px dashed white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-4.prodotto, .col-4.compagnia, .col-4.risorse, .col-4.norme{
+    border-color: white;
+}
