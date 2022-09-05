@@ -36,7 +36,7 @@
     --bg-column-max: #1E90FF;
     --bg-grey: #D3D3D3;
     --bg-green: #228B22;
-    --bg-footer-top: #23272A;
+    --bg-footer: #23272A;
     --bg-footer-social: #F08080;
     --bg-footer-menu: #20B2AA;
     --bg-footer-bottom: #7FFFD4;
@@ -120,7 +120,9 @@
     border: 1px dashed black;
 }
 
-.invito,.facile,.fandom {
+.invito,
+.facile,
+.fandom {
     height: 600px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -140,14 +142,14 @@
     background-color: var(--bg-grey);
 }
 
-.chiusura{
+.chiusura {
     height: 1000px;
     background-color: var(--bg-grey);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.chiusura_main{
+.chiusura_main {
     height: 900px;
     background-color: var(--bg-green);
     border: 1px dashed black;
@@ -157,33 +159,50 @@
 
 /* #region footer */
 
-.footer{
-    background-color: var(--bg-footer-top);
+.footer_top {
+    background-color: var(--bg-footer);
 }
-.row.menu_bottom{
+
+.row.footer_top {
     height: 630px;
-    background-color: var(--bg-footer-top);
-    padding-top: 10px;
+    background-color: var(--bg-footer);
+    padding-top: 5px;
     padding-bottom: 30px;
 }
 
-.row.logo_bottom{
-    height: 100px;
-    background-color: var(--bg-footer-top);
-}
-
-.col-3.social{
+.col-3.social {
     background-color: var(--bg-footer-social);
 }
 
-.col-9.menu{
+.col-9.menu {
     background-color: var(--bg-footer-menu);
     border: 1px dashed white;
     display: flex;
     justify-content: space-evenly;
 }
 
-.col-4.prodotto, .col-4.compagnia, .col-4.risorse, .col-4.norme{
+.col-4.prodotto,
+.col-4.compagnia,
+.col-4.risorse,
+.col-4.norme {
     border-color: white;
     width: calc(100% / 4);
+}
+
+.container_100.footer_bottom{
+    background-color: var(--bg-footer);
+    margin-bottom: -20px;
+    border-top: 1px solid white;
+}
+
+.container_80.footer_bottom{
+    height: 80px;
+    background-color: var(--bg-footer-bottom);
+    margin-bottom: -20px;
+}
+
+.logo_bottom, .login_bottom{
+    background-color: var(--bg-footer-log);
+    height: 40px;
+    width: 60px;
 }
