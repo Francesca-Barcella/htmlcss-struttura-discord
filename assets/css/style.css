@@ -199,10 +199,23 @@
     height: 80px;
     background-color: var(--bg-footer-bottom);
     margin-bottom: -20px;
+    position: relative;
 }
 
 .logo_bottom, .login_bottom{
     background-color: var(--bg-footer-log);
     height: 40px;
     width: 60px;
+}
+
+.logo_bottom{
+    position: absolute;
+    left: 0;
+    top: 20px;
+ }
+
+.login_bottom{
+   position: absolute;
+   right: 0;
+   top: 20px;
 }
