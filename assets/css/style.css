@@ -35,6 +35,7 @@
     --bg-column-min: #FFC0CB;
     --bg-column-max: #1E90FF;
     --bg-grey: #D3D3D3;
+    --bg-green: #228B22;
 }
 
 /* #endregion utilities*/
@@ -134,4 +135,14 @@
     background-color: var(--bg-grey);
 }
 
+.chiusura{
+    height: 1000px;
+    background-color: var(--bg-grey);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.chiusura_main{
+    height: 900px;
+    background-color: var(--bg-green);
 /* #endregion main */
