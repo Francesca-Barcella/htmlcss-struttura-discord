@@ -1,26 +1,26 @@
 /* #region common */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container_100{
+.container_100 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.container_80{
+.container_80 {
     width: 80%;
     margin: auto;
 }
 
-.container_60{
+.container_60 {
     width: 70%;
     margin: auto;
 }
 
-.row{
+.row {
     display: flex;
 }
 
@@ -34,6 +34,7 @@
     --bg-mainlite: #EE82EE;
     --bg-column-min: #FFC0CB;
     --bg-column-max: #1E90FF;
+    --bg-grey: #D3D3D3;
 }
 
 /* #endregion utilities*/
@@ -67,68 +68,70 @@
 .col-9 {
     width: calc((100% / 12) * 9);
 }
+
 /* #endregion col- */
 
 /* #region header */
-.header{
+.header {
     background-color: var(--bg-header);
     height: 80px;
 }
 
-.row.nav{
+.row.nav {
     background-color: var(--bg-nav);
     height: 40px;
     line-height: 40px;
 }
 
-.col-2.logo{
+.col-2.logo {
     text-align: left;
     padding-left: 10px;
 }
 
-.row.menu{
+.row.menu {
     margin: auto;
     justify-content: space-between;
     border: none;
 }
 
-.col-2.login{
+.col-2.login {
     text-align: right;
     padding-right: 10px;
 }
 
 /* #endregion header */
 
-/* #region section apertura */
-.apertura{
+/* #region main */
+.apertura {
     background-color: var(--bg-main);
     height: 500px;
     padding-top: 50px;
 }
-.presentazione{
+
+.presentazione {
     background-color: var(--bg-mainlite);
     height: 400px;
     border: 1px dashed black;
 }
 
-/* #endregion section apertura */
-
-
-/* #region section invito */
-.invito{
+.invito,.facile,.fandom {
     height: 600px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.col-9.column_max{
+.col-9.column_max {
     background-color: var(--bg-column-max);
     height: 500px;
 }
 
-.col-3.column_min{
+.col-3.column_min {
     background-color: var(--bg-column-min);
     height: 500px;
 }
-/* #endregion section invito */
 
+.facile {
+    background-color: var(--bg-grey);
+}
+
+/* #endregion main */
