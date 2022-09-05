@@ -180,9 +180,10 @@
     background-color: var(--bg-footer-menu);
     border: 1px dashed white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .col-4.prodotto, .col-4.compagnia, .col-4.risorse, .col-4.norme{
     border-color: white;
+    width: calc(100% / 4);
 }
