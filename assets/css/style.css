@@ -1,3 +1,4 @@
+/* #region common */
 *{
     margin: 0;
     padding: 0;
@@ -5,16 +6,58 @@
 }
 
 .container_100{
-    background-color: aquamarine;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .container_80{
     width: 80%;
-    background-color: brown;
-    height: 300px;
     margin: auto;
 }
 
 .row{
     display: flex;
 }
+
+/* #endregion common */
+
+/* #region utilities*/
+:root {
+    --bg-header: #ADD8E6;
+    --bg-nav: #DAA520;
+    --bg-main: #00008B;
+    --bg-mainlite: #EE82EE;
+}
+
+/* #endregion utilities*/
+
+/* #region col- */
+
+[class^="col-"] {
+    border: 1px dashed black;
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col-5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+/* #endregion col- */
+
+/* #region header */
+.header{
+    background-color: var(--bg-header);
+    height: 80px;
+}
+
+.row.menu{
+    background-color: var(--bg-nav);
+}
+
+/* #endregion header */
